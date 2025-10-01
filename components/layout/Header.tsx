@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Search, ShoppingCart, Menu, X, User, Heart } from 'lucide-react';
 import { useCart } from '@/hooks/useCart';
 import { CartDrawer } from '@/components/cart/CartDrawer';
-import { AuthButton } from '@/components/auth/AuthButton';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -160,7 +159,6 @@ export function Header() {
               {/* Mobile Account Links */}
               <div className="border-t border-gray-200 pt-2 mt-2">
                 <div className="py-2">
-                  <AuthButton />
                 </div>
                 <Link
                   href="/wishlist"
